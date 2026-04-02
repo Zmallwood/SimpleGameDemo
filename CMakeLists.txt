@@ -29,11 +29,11 @@ target_precompile_headers(SimpleGameDemo
 
 target_compile_options(SimpleGameDemo PRIVATE
     $<$<CONFIG:Release>:-O3>
-    $<$<CONFIG:Release>:-flto>
+    $<$<CONFIG:Release>:-flto=8>
     $<$<CONFIG:Debug>:-O0>
     $<$<CONFIG:Debug>:-g>
 )
 
 target_link_options(SimpleGameDemo PRIVATE
-    $<$<CONFIG:Release>:-flto>
+    $<$<CONFIG:Release>:-flto=8>
 )
