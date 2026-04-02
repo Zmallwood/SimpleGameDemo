@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
             "entities":
             [
                 { 
-                    "name": "Background",
                     "type": "Image",
                     "components":
                     { 
@@ -27,7 +26,6 @@ int main(int argc, char *argv[])
                     }
                 },
                 {
-                    "name": "Logo",
                     "type": "Image",
                     "components":
                     { 
