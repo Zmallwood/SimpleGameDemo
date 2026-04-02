@@ -5,14 +5,35 @@ int main(int argc, char *argv[])
 {
     using namespace ForradiaEngine;
 
-    std::unordered_map<std::string, IScene *> scenes;
+    std::unordered_map<std::string, std::string> scenesData;
 
-    IScene scene;
-    scenes.insert({"IntroScene", &scene});
+    std::string introSceneJSON = R"(
+        {
+            "entities":
+            [
+                { 
+                    "name": "Background",
+                    "components":
+                    { 
+                        "image": { "imageName": "DefaultSceneBackground"},
+                        "destination":
+                        {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "width": 1.0,
+                            "height": 1.0
+                        }
+                    }
+                }
+            ]
+        }
+    )";
+
+    scenesData.insert({"IntroScene", introSceneJSON});
 
     std::string startSceneName{"IntroScene"};
 
-    Game game("Forradia Engine Simple Game", scenes, startSceneName);
+    Game game("Forradia Engine Simple Game", scenesData, startSceneName);
     game.Start();
 
     return EXIT_SUCCESS;

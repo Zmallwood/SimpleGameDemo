@@ -5,4 +5,3 @@
 
 #include "ForradiaEngine/ForradiaEngine.hpp"
 #include "ForradiaEngine/Game.hpp"
-#include "ForradiaEngine/IScene.hpp"
