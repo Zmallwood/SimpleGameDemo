@@ -1,6 +1,6 @@
 # Third-Party Libraries
 
-This directory contains third-party libraries used in **MyGame**.
+This directory contains third-party libraries used in **SimpleGameDemo**.
 
 - **SDL2** (zlib license)  
   https://www.libsdl.org  
