@@ -23,6 +23,9 @@ This directory contains third-party libraries used in **MyGame**.
 - **nlohmann/json** (MIT license)  
   https://github.com/nlohmann/json  
 
+- **FreeType** (FreeType License – BSD‑like with credit clause)  
+  https://www.freetype.org  
+
 ## Notes
 
 - All license files are included in this folder as separate `.txt` files.
