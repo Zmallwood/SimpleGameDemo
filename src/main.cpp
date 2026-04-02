@@ -3,6 +3,17 @@
 
 int main(int argc, char *argv[])
 {
-    ForradiaEngine::Game game("Forradia Engine Simple Game");
+    using namespace ForradiaEngine;
+
+    std::unordered_map<std::string, IScene *> scenes;
+
+    IScene scene;
+    scenes.insert({"IntroScene", &scene});
+
+    std::string startSceneName{"IntroScene"};
+
+    Game game("Forradia Engine Simple Game", scenes, startSceneName);
     game.Start();
+
+    return EXIT_SUCCESS;
 }
