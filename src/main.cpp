@@ -3,6 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-    ForradiaEngine::Game game;
+    ForradiaEngine::Game game("Forradia Engine Simple Game");
     game.Start();
 }
