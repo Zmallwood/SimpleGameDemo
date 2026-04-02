@@ -25,6 +25,21 @@ int main(int argc, char *argv[])
                             "height": 1.0
                         }
                     }
+                },
+                {
+                    "name": "Logo",
+                    "type": "Image",
+                    "components":
+                    { 
+                        "image": { "imageName": "SimpleGameDemoLogo"},
+                        "destination":
+                        {
+                            "x": 0.3,
+                            "y": 0.3,
+                            "width": 0.4,
+                            "height": 0.2
+                        }
+                    }
                 }
             ]
         }
