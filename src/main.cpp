@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
             [
                 { 
                     "name": "Background",
+                    "type": "Image",
                     "components":
                     { 
                         "image": { "imageName": "DefaultSceneBackground"},
