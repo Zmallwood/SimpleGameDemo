@@ -12,8 +12,7 @@ file(GLOB_RECURSE SRC_SOURCES
 
 add_executable(SimpleGameDemo ${SRC_SOURCES})
 
-add_library(ForradiaEngine STATIC IMPORTED)
-set_target_properties(ForradiaEngine PROPERTIES IMPORTED_LOCATION ../lib/libForradiaEngine.a)
+target_link_directories(SimpleGameDemo PRIVATE ./lib)
 
 target_link_libraries(SimpleGameDemo PRIVATE ForradiaEngine)
 
